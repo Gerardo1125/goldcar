@@ -1,6 +1,8 @@
 package com.example.myapplication;
 
 import androidx.appcompat.app.AppCompatActivity;
+
+import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
@@ -26,6 +28,8 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Log.i("FUNCION DEL BOTON", "Username: "+username.getText() +"\nPassword: "+ password.getText() );
+                Intent i = new Intent(MainActivity.this, CategoryRoutes.class);
+                startActivity(i);
             }
         });
     }

@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".CategoryRoutes"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="5dp"
+            >
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Categorias de rutas"
+                android:textAlignment="center"
+                android:textSize="35dp"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                />
+
+            <ImageButton
+                android:id="@+id/logout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="3dp"
+                android:adjustViewBounds="true"
+                android:background="@color/white"
+                android:maxWidth="40dp"
+                android:maxHeight="60dp"
+                android:scaleType="fitCenter"
+                android:src="@drawable/logout" />
+
+        </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@android:color/secondary_text_dark_nodisable"
+            android:layout_marginTop="20dp"
+            />
+
+        <TextView
+            android:id="@+id/gas_acid"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:text="Marcobre Acidos - Gases"
+            android:textSize="45dp"
+            android:textColor="#0C8CFA"
+            android:layout_marginTop="15dp"/>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@android:color/darker_gray"
+            android:layout_marginTop="20dp"
+            />
+
+        <ListView
+            android:id="@+id/acid_list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:divider="@color/white"
+            android:layout_marginTop="20dp"
+            android:dividerHeight="20dp"
+        />
+
+    </LinearLayout>
+
+
+</RelativeLayout>
