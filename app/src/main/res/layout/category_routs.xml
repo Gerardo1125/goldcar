@@ -57,7 +57,7 @@
             android:textAlignment="center"
             android:text="Marcobre Acidos - Gases"
             android:textSize="45dp"
-            android:textColor="#0C8CFA"
+            android:textColor="@color/primaryColor"
             android:layout_marginTop="15dp"/>
         <View
             android:layout_width="match_parent"

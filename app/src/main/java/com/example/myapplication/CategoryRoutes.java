@@ -10,10 +10,13 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ListView;
 
+import androidx.core.content.ContextCompat;
+
 public class CategoryRoutes extends Activity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.category_routs);
+        getWindow().setStatusBarColor(ContextCompat.getColor(this, R.color.primaryColor));
 
         ListView simpleList;
         String acidList[] = {"Acido-Gases [Cargado]", "Acido-Gases [Vacio]", "Gases-Acido"};
