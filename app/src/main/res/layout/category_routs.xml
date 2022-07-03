@@ -2,11 +2,13 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    tools:context=".CategoryRoutes"
+    tools:context="com.copiloto.CategoryRoutes"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:id="@+id/category_routes">
 
     <LinearLayout
+        android:id="@+id/linear_content"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical">
@@ -50,31 +52,8 @@
             android:layout_marginTop="20dp"
             />
 
-        <TextView
-            android:id="@+id/gas_acid"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:textAlignment="center"
-            android:text="Marcobre Acidos - Gases"
-            android:textSize="45dp"
-            android:textColor="@color/primaryColor"
-            android:layout_marginTop="15dp"/>
-        <View
-            android:layout_width="match_parent"
-            android:layout_height="1dp"
-            android:background="@android:color/darker_gray"
-            android:layout_marginTop="20dp"
-            />
 
-        <ListView
-            android:id="@+id/acid_list"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_gravity="center"
-            android:divider="@color/white"
-            android:layout_marginTop="20dp"
-            android:dividerHeight="20dp"
-        />
+
 
     </LinearLayout>
 
