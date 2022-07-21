@@ -7,6 +7,7 @@ public class User {
     private String user_first_name;
     private String user_last_name;
     private String user_email;
+    private String user_password;
     private Boolean user_is_staff;
     private Boolean user_is_super;
 
@@ -21,8 +22,17 @@ public class User {
         this.user_is_super = user_is_super;
     }
 
+    public User(String token, Integer user_id, String password){
+        this.token = token;
+        this.user_id  = user_id;
+        this.user_password = password;
+    }
+
     public String getToken() {
         return token;
+    }
+    public String getPassword() {
+        return user_password;
     }
 
     public void setToken(String token) {

@@ -23,8 +23,5 @@ public interface ApiInterface {
 
     @FormUrlEncoded
     @POST("/api/geofences/ep-movil-general/")
-    @Headers({
-            "Authorization: Token 90cd889ded745d578216ff847223583666daf6ea"
-    })
-    Call<JsonArray> getGeozona(@Field("id_user") String id_user);
+    Call<JsonArray> getGeozona(@Field("id_user") String id_user, @Header("Authorization") String header);
 }

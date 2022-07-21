@@ -3,7 +3,16 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/gerar/AndroidStudioProjects/MyApplication/MyApplication/app/src/main/res/drawable/ic_baseline_fullscreen_24.xml" value="0.116" />
+        <entry key="..\:/Users/gerar/AndroidStudioProjects/MyApplication/MyApplication/app/src/main/res/drawable/ic_baseline_stop_circle_24.xml" value="0.116" />
+        <entry key="..\:/Users/gerar/AndroidStudioProjects/MyApplication/MyApplication/app/src/main/res/layout/category_routs.xml" value="0.11068895643363728" />
+        <entry key="..\:/Users/gerar/AndroidStudioProjects/MyApplication/MyApplication/app/src/main/res/layout/dialog_logout.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/gerar/AndroidStudioProjects/MyApplication/MyApplication/app/src/main/res/layout/tracking_map.xml" value="0.21" />
         <entry key="..\:/Users/gerar/AndroidStudioProjects/MyApplication/app/src/main/res/drawable/border_button.xml" value="0.211" />
+        <entry key="..\:/Users/gerar/AndroidStudioProjects/MyApplication/app/src/main/res/drawable/ic_baseline_stop_circle_24.xml" value="0.219" />
+        <entry key="..\:/Users/gerar/AndroidStudioProjects/MyApplication/app/src/main/res/drawable/ic_launcher_background.xml" value="0.219" />
+        <entry key="..\:/Users/gerar/AndroidStudioProjects/MyApplication/app/src/main/res/drawable/parar.xml" value="0.182" />
+        <entry key="..\:/Users/gerar/AndroidStudioProjects/MyApplication/app/src/main/res/drawable/stop.xml" value="0.218" />
         <entry key="..\:/Users/gerar/AndroidStudioProjects/MyApplication/app/src/main/res/layout/activity_main.xml" value="0.18" />
         <entry key="..\:/Users/gerar/AndroidStudioProjects/MyApplication/app/src/main/res/layout/category_routs.xml" value="0.22" />
         <entry key="..\:/Users/gerar/AndroidStudioProjects/MyApplication/app/src/main/res/layout/conttent_acid_gas.xml" value="0.25271739130434784" />

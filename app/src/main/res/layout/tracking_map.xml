@@ -10,7 +10,8 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:orientation="vertical">
+        android:orientation="vertical"
+        >
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -33,7 +34,7 @@
                 />
 
             <TextView
-                android:id="@+id/textView2"
+                android:id="@+id/geofenceNameCurrent"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
@@ -46,10 +47,71 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:orientation="horizontal">
+            android:visibility="gone"
+            android:background="@drawable/fondolite"
+            android:layout_gravity="center"
+            android:orientation="horizontal"
+            android:id="@+id/full_screen_info"
+            >
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="0.5"
+                android:layout_gravity="center"
 
+                >
+                <TextView
+                    android:id="@+id/v_actual_full_screen"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="0"
+                    android:textColor="@color/black"
+                    android:textSize="150dp"
+                    android:textAlignment="center"
+                    android:gravity="center"
+                    android:autoSizeTextType="uniform"
+                    />
+            </FrameLayout>
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="0.5"
+                android:layout_gravity="center"
+                >
+                <TextView
+                    android:id="@+id/v_max_full_screen"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="--"
+                    android:textColor="@color/black"
+                    android:textSize="150dp"
+                    android:lineSpacingExtra="60dp"
+                    android:textAlignment="center"
+                    android:gravity="center"
+                    android:autoSizeTextType="uniform"
+                    />
+                <com.google.android.material.floatingactionbutton.FloatingActionButton
+                    app:srcCompat="@drawable/ic_baseline_fullscreen_24"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end|bottom"
+                    android:layout_margin="16dp"
+                    app:fabCustomSize="50dp"
+                    app:iconSize="50dp"
+                    android:id="@+id/full_screen_hide"
+                    />
+            </FrameLayout>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:id="@+id/without_full_screen"
+            >
 
             <LinearLayout
+                android:id="@+id/indicator_velocity"
                 android:layout_width="0dp"
                 android:layout_weight=".33"
                 android:layout_height="fill_parent"
@@ -107,14 +169,45 @@
             <!---    android:layout_width="0dp" -->
             <!---   android:layout_weight=".67" -->
             <!---   android:layout_height="wrap_content" />  -->
-            <com.mapbox.mapboxsdk.maps.MapView
-                android:id="@+id/mapView"
+            <FrameLayout
+                android:id="@+id/frameLayout1"
                 android:layout_width="0dp"
                 android:layout_weight=".67"
                 android:layout_height="match_parent"
+                android:layout_gravity="end|bottom">
+
+            <com.mapbox.mapboxsdk.maps.MapView
+                android:id="@+id/mapView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
                 mapbox:mapbox_cameraZoom="14"
                 />
+                <com.google.android.material.floatingactionbutton.FloatingActionButton
+                    app:srcCompat="@drawable/ic_baseline_fullscreen_24"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end|bottom"
+                    android:layout_margin="16dp"
+                    app:fabCustomSize="50dp"
+                    app:iconSize="50dp"
+                    android:id="@+id/full_screen"
+                    />
+                <com.google.android.material.floatingactionbutton.FloatingActionButton
+                    app:srcCompat="@drawable/ic_baseline_stop_circle_24"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end|bottom"
+                    android:layout_marginBottom="80dp"
+                    android:layout_marginRight="16dp"
+                    app:fabCustomSize="50dp"
+                    app:iconSize="50dp"
+                    android:id="@+id/stop_continue"
+                    />
+            </FrameLayout>
 
         </LinearLayout>
+
+
     </LinearLayout>
+
 </RelativeLayout>
